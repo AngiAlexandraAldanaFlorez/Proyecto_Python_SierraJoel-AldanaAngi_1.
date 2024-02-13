@@ -1,16 +1,28 @@
 {
   "campus": {
     "inscrito": [
-      {
-       
-      }
-    ]
-  }
-  {
-   "aprobado": [
-      {
-
-      }
+      {}
+    ],
+    "aprobado": [
+      {}
+    ],
+    "desaprobado": [
+      {}
+    ],
+    "filtrado": [
+      {}
+    ],
+    "cursando": [
+      {}
+    ],
+    "graduado": [
+      {}
+    ],
+    "expulsado": [
+      {}
+    ],
+    "retirado": [
+      {}
     ]
   }
 }
