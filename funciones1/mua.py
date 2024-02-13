@@ -17,7 +17,6 @@ if Options == 'Agregar':
         "telefonos": str(input("Telefonos: ")),
         "Documento": str(input("Documento: ")),
         "Estado": str(input("Estado: ")),
-    if lista_campers["Estado"].lower()=="graduado" 
         "Riesgo":  str(input("Riesgo: ")),
     }
     if lista_campers["Estado"].lower() == "inscrito":
@@ -25,7 +24,9 @@ if Options == 'Agregar':
 
         with open("camper.json", 'w') as outfile:
             json.dump(inscritos, outfile, indent=2)
-            
+    
+    json.notas()
+
     if lista_campers["Estado"].lower() == "aprobado":
         inscritos["campus"]["aprobado"].append(lista_campers)
         
