@@ -1,7 +1,7 @@
 import json
 
 ruta_json = 'Proyect/modulos/data/camper.json'
-with open(ruta_json, 'r') as file:
+with open(ruta_json) as file:
     datos_json = json.load(file)
 
 Options = input('¿Quieres agregar o actualizar ?')
