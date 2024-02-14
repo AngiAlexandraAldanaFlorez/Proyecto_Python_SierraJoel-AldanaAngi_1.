@@ -1,4 +1,4 @@
-import funciones1.modificar as modi
+import Proyect.modulos.data.modificar as modi
 
 print("╔══════ Bienvenido ══════╗")
 print("║                        ║")
