@@ -1,28 +1,17 @@
 {
   "campus": {
     "inscrito": [
-      {}
-    ],
-    "aprobado": [
-      {}
-    ],
-    "desaprobado": [
-      {}
-    ],
-    "filtrado": [
-      {}
-    ],
-    "cursando": [
-      {}
-    ],
-    "graduado": [
-      {}
-    ],
-    "expulsado": [
-      {}
-    ],
-    "retirado": [
-      {}
+      {
+        "nombre": "jiws",
+        "apellido1": "asi",
+        "apellido2": "swhsu",
+        "direccion": "shwu",
+        "acudiente": "aa",
+        "telefonos": "aaa",
+        "Documento": "aa",
+        "Estado": "inscrito",
+        "Riesgo": " "
+      }
     ]
   }
 }

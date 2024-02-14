@@ -1,4 +1,4 @@
-import Proyect.modulos.data.modificar as modi
+import funciones1.modificar as modi
 
 print("╔══════ Bienvenido ══════╗")
 print("║                        ║")
@@ -23,6 +23,7 @@ if roles == 1:
       '''))  
 if opciones == 1:
       modi.options()
+   
 
        
            
