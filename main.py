@@ -1,4 +1,5 @@
-import funciones1.modificar as modi
+import json 
+
 
 print("╔══════ Bienvenido ══════╗")
 print("║                        ║")
@@ -21,8 +22,80 @@ if roles == 1:
       \t4. Salas
       \t5. Test
       '''))  
-if opciones == 1:
-      modi.options()
+    if opciones == 1:
+            with open("funciones1/camper.json","r") as file:
+                  inscritos = json.load(file)
+
+            print('¿Quieres agregar o actualizar? ')
+            Options = str(input('--> ')).lower()
+
+            if Options == 'agregar':
+                  lista_campers = {
+                  "nombre": str(input("nombre: ")),
+                  "apellido1": str(input("apellido: ")),
+                  "apellido2": str(input("apellido2: ")),
+                  "direccion": str(input("direccion: ")),
+                  "acudiente": str(input("Acudiente: ")),
+                  "telefonos": str(input("Telefonos: ")),
+                  "Documento": str(input("Documento: ")),
+                  "Estado": "inscrito",
+                  "Riesgo":  " ",
+                  }
+            with open("camper.json", 'w') as outfile:
+                  json.dump(inscritos, outfile, indent=4)
+            
+            print('¿Quieres ingresar las notas? (si/no)')
+            ingre_notas=(str(input('--> ')))
+            if ingre_notas=="Si" or ingre_notas=="si":
+                  with open("funciones1/camper.json","r") as file:
+                        inscritos = json.load(file)
+                  notas1=int(input('Ingrese la nota 1: '))
+                  notas2=int(input('Ingrese la nota 2: '))
+                  nota=(notas1+notas2)/2
+                  if nota>60:
+                        inscritos['Estado'] = "Aprobado"  
+                        inscritos["nota"] = ("",nota) 
+                        print("Este camper fue aprobado con una nota de:", nota)
+                        continua=(input(''))
+                              
+                  elif nota<60:
+                        inscritos['Estado'] = "Desaprobado"  
+                        inscritos["nota"] = ("",nota) 
+                        print("Este camper fue aprobado con una nota de:", nota)
+            
+
+            with open("funciones1/camper.json","r") as file:
+                  datos = json.load(file)
+                  camp=datos["campus"]
+                  id_camper=str(input('Ingrese documento del camper'))
+                  for camp in camp:
+                        if camp["Documento"]==id_camper:
+                              nota1=int(input('ingrese nota de tareas: '))*0.10
+                              nota2=int(input('ingrese nota de filtros: '))*0.40
+                              nota3=int(input('ingrese nota de proyecto'))*0.60
+                  
+                              final = (nota1+nota2+nota3)
+            
+                              if final >=  65:
+                                    camp['Estado'] = "Aprobado"  
+                                    camp["nota"] = ("",final) 
+                                    print("¡Este camper ha aprobado el filtro mensual con una nota final de", final)
+                              elif final >59 & final < 65:
+                                    camp['Estado'] = "Bajo rendimiento"   
+                                    camp["nota"] = "la nota es",final
+                                    print("El camper esta en riego, Su nota final es", final)
+                              else:
+                                    camp['Estado'] = "Reprobado"   
+                                    camp["nota"] = "la nota es",final
+                                    print("El camper no ha aprobado, Su nota final es", final)                    
+                        else:
+                              print("Camper no encontrado.")  
+                              break   
+                         
+                    
+                      
+                        with open("JSON/Campers.json", "w") as outfile:
+                              json.dump(datos, outfile, indent=4)
    
 
        

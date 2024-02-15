@@ -1,7 +1,6 @@
 {
     "campus": {
         "inscrito": [
-            {},
             {
                 "nombre": "jiws",
                 "apellido1": "asi",
@@ -12,28 +11,40 @@
                 "Documento": "aa",
                 "Estado": "inscrito",
                 "Riesgo": " "
+            },
+            {
+                "nombre": "jioc",
+                "apellido1": "dwjd",
+                "apellido2": "dwijd",
+                "direccion": "dwij",
+                "acudiente": "dwijd",
+                "telefonos": "dawjd",
+                "Documento": "dawij",
+                "Estado": "inscrito",
+                "Riesgo": " "
+            },
+            {
+                "nombre": "Angi",
+                "apellido1": "Aldana",
+                "apellido2": "Florez",
+                "direccion": "mz i casa",
+                "acudiente": "mercedes",
+                "telefonos": "317094407",
+                "Documento": "1097096369",
+                "Estado": "inscrito",
+                "Riesgo": " "
+            },
+            {
+                "nombre": "lola",
+                "apellido1": "perez",
+                "apellido2": "dwa",
+                "direccion": "mz",
+                "acudiente": "adw",
+                "telefonos": "3177094407",
+                "Documento": "1097096369",
+                "Estado": "inscrito",
+                "Riesgo": " "
             }
-        ],
-        "aprobado": [
-            {}
-        ],
-        "desaprobado": [
-            {}
-        ],
-        "filtrado": [
-            {}
-        ],
-        "cursando": [
-            {}
-        ],
-        "graduado": [
-            {}
-        ],
-        "expulsado": [
-            {}
-        ],
-        "retirado": [
-            {}
         ]
     }
 }

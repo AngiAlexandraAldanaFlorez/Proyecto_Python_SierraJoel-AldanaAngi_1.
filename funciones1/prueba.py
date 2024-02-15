@@ -41,7 +41,6 @@ if Options == 'Agregar':
         pass
 elif Options == 'Actualizar':
 
-
         pass
 else:
         print('Opción no válida')
